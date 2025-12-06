@@ -258,18 +258,80 @@ section {
 .footer {
     background: #2c3e50;
     color: white;
-    text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-content p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.social-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3498db;
+    transition: width 0.3s;
+}
+
+.social-link:hover {
+    color: #3498db;
+    transform: translateY(-2px);
+}
+
+.social-link:hover::after {
+    width: 100%;
+}
+
+/* Icon styling */
+.social-link i {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.social-link:hover i {
+    transform: scale(1.2);
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 1.5rem;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    
+    .social-link {
+        font-size: 1rem;
+    }
+    
+    .social-link i {
+        font-size: 1.3rem;
     }
 }
