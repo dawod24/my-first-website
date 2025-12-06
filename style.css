@@ -62,7 +62,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #72cddb 0%, #673b93 100%);
+    background: linear-gradient(135deg, #3371c3 0%, #673b93 100%);
     color: white;
     min-height: 100vh;
     display: flex;
@@ -82,7 +82,7 @@ body {
 }
 
 .highlight {
-    color: #f39c12;
+    color: #44c6a1;
 }
 
 .hero-subtitle {
@@ -92,7 +92,7 @@ body {
 }
 
 .cta-button {
-    background: #f39c12;
+    background: #c66b3b;
     color: white;
     border: none;
     padding: 15px 40px;
@@ -103,7 +103,7 @@ body {
 }
 
 .cta-button:hover {
-    background: #e67e22;
+    background: #c6c82c;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
