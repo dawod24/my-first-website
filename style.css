@@ -267,13 +267,31 @@ section {
 }
 
 .project-btn-secondary {
-    background: #636E72;
-    cursor: not-allowed;
+    background: #00B894;
 }
 
 .project-btn-secondary:hover {
-    background: #636E72;
-    transform: none;
+    background: #00A383;
+    transform: translateY(-2px);
+}
+
+/* Live Demo Button - Green */
+.project-btn-live {
+    background: #00B894;
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.project-btn-live:hover {
+    background: #00A383;
+    transform: translateY(-2px);
+}
+
+.project-btn-live i {
+    font-size: 0.9rem;
 }
 
 /* Contact Section */

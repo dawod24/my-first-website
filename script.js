@@ -61,7 +61,8 @@ window.addEventListener('scroll', () => {
 // Project button clicks - only for "Coming Soon" buttons
 const comingSoonBtns = document.querySelectorAll('.project-btn-secondary');
 comingSoonBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
         alert('This project is currently in development. Check back soon!');
     });
 });
