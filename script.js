@@ -58,11 +58,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Project button clicks
-const projectBtns = document.querySelectorAll('.project-btn');
-projectBtns.forEach((btn, index) => {
+// Project button clicks - only for "Coming Soon" buttons
+const comingSoonBtns = document.querySelectorAll('.project-btn-secondary');
+comingSoonBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-        alert(`Project ${index + 1} clicked! You can link this to actual project pages.`);
+        alert('This project is currently in development. Check back soon!');
     });
 });
 

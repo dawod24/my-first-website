@@ -215,6 +215,67 @@ section {
     background: #2980B9;
 }
 
+/* Project Card Enhancements */
+.project-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    color: #555;
+    margin-bottom: 1rem;
+    min-height: 80px;
+}
+
+/* Technology Tags */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.tech-tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-btn {
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.project-btn i {
+    font-size: 1rem;
+}
+
+.project-btn-secondary {
+    background: #636E72;
+    cursor: not-allowed;
+}
+
+.project-btn-secondary:hover {
+    background: #636E72;
+    transform: none;
+}
+
 /* Contact Section */
 .contact-form {
     max-width: 600px;
